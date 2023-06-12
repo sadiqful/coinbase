@@ -22,7 +22,7 @@ export default function Home() {
         </div>
         <div className="description">
           <p className="subdue">
-            Market Watchman allow you tu monitor your balances, trade without,
+            Market Watchman allow you to monitor your balances, trade without,
             limits and earn rewards for specific coins.
           </p>
         </div>
