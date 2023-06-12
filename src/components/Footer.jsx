@@ -104,3 +104,43 @@ export default function Footer() {
   );
 }
 
+const Foot = styled.footer`
+  padding: 0rem 5rem;
+  padding-bottom: 3rem;
+  position: relative;
+  .upper-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    .social-icons {
+      margin-top: 2rem;
+      svg {
+        font-size: 2rem;
+      }
+    }
+    .spacemen {
+      position: absolute;
+      right: 0rem;
+      top: -23rem;
+    }
+  }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    padding: 1rem 2rem;
+    .social-icons {
+      display: none;
+      flex-direction: row;
+    }
+    .upper-footer {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .spacemen {
+      display: none;
+    }
+    .cards {
+      img {
+        width: 80vw;
+      }
+    }
+  }
+`;
