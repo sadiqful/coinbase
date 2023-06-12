@@ -90,7 +90,7 @@ export default function Footer() {
       </div>
       <div className="lower-footer flex a-center j-between gap">
         <div className="col1">
-          <span>&copy; Crypto a Theme by Kishan Sheth</span>
+          <span>&copy; Built by Aliyu Abubakar</span>
         </div>
         <div className="col2 flex a-center gap">
           <span>Privacy Policy</span>
