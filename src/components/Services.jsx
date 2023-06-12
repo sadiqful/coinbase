@@ -54,3 +54,25 @@ export default function Services() {
     </Section>
   );
 }
+
+const Section = styled.section`
+  .services {
+    padding: 0 5rem;
+    gap: 10rem;
+    .service {
+      .title {
+        font-size: 1.5rem;
+      }
+      .description {
+        font-size: 1rem;
+        line-height: 1.2rem;
+      }
+    }
+  }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    .services {
+      padding: 2rem;
+      gap: 3rem;
+    }
+  }
+`;
