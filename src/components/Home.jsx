@@ -38,3 +38,17 @@ export default function Home() {
   );
 }
 
+const Section = styled.section`
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    .subtitle {
+      h3 {
+        flex-direction: row;
+      }
+    }
+    .buttons {
+      flex-direction: row;
+      margin: 2rem 0;
+      gap: 1rem;
+    }
+  }
+`;
