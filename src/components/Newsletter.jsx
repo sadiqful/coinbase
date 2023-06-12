@@ -21,3 +21,41 @@ export default function Newsletter() {
     </Section>
   );
 }
+
+const Section = styled.section`
+  margin: 0;
+  margin-bottom: 8rem;
+  background-color: var(--dark-background);
+  padding: 8rem;
+  .newsletter {
+    .input-container {
+      background-color: var(--input-background);
+      padding: 1rem;
+      padding-right: 8rem;
+      border-radius: 0.5rem;
+      font-size: 1.3rem;
+      color: white;
+      input {
+        background-color: transparent;
+        border: none;
+        font-size: 1.2rem;
+        color: white;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    .newsletter {
+      .input-container {
+        flex-direction: row;
+        padding-right: 1rem;
+        input {
+        }
+      }
+    }
+  }
+`;
