@@ -97,3 +97,56 @@ export default function DailyPrices() {
     </Section>
   );
 }
+
+const Section = styled.section`
+  background-color: #ffffff10;
+  border-radius: 1rem;
+  .header {
+    border-bottom: 1px solid #ffffff42;
+    padding-bottom: 1rem;
+    padding: 2rem;
+    span {
+    }
+  }
+  .header,
+  .data > .row {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 0.5fr;
+  }
+
+  .data {
+    padding: 0 2rem 2rem 2rem;
+    .row {
+      .name {
+        display: flex;
+      }
+    }
+  }
+
+  span {
+    display: block;
+  }
+  .green {
+    color: var(--green);
+  }
+
+  .red {
+    color: var(--red);
+  }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    max-width: 90vw;
+    overflow-y: auto;
+    border-radius: 0;
+    ::-webkit-scrollbar {
+      height: 1px;
+    }
+    .container {
+      width: 780px;
+      .header {
+      }
+      .name {
+        flex-direction: row;
+      }
+    }
+  }
+`;
